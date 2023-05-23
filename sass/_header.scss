@@ -1,0 +1,90 @@
+.banner {
+	height: 94vh;
+	width: 100%;
+	background-image: url(/img/florian-steciuk-F7Rl02ir0Gg-unsplash2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+
+.banner__container {
+	max-width: 160rem;
+	margin: 0 auto;
+	animation-name: liftUp;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.banner__title {
+	padding-left: 12rem;
+	padding-top: 14rem;
+	font-weight: 800;
+	font-size: 5rem;
+}
+
+.banner__text {
+	padding-left: 12rem;
+	font-size: 2rem;
+	font-weight: 400;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.banner__text--3 {
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: $color-primary;
+}
+
+@keyframes liftUp {
+	0% {
+		transform: translateY(200px);
+		opacity: 0%;
+	}
+	100% {
+		transform: translateY(s0px);
+	}
+}
+
+@media (max-width: 950px) {
+	.banner__title,
+	.banner__text {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.banner__title {
+		padding-top: 20rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.banner__title {
+		font-size: 3.5rem;
+	}
+
+	.banner__text--2 {
+		font-size: 1.6rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.banner__title {
+		font-size: 3rem;
+	}
+
+	.banner__text--2 {
+		font-size: 1.4rem;
+	}
+
+	@media (max-width: 400px) {
+		.banner__title {
+			padding-top: 10rem;
+		}
+
+		.banner__text--2 {
+			font-size: 1.4rem;
+		}
+	}
+}

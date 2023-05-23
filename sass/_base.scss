@@ -1,0 +1,47 @@
+// COLOR VARIABLES
+$color-primary: #f8d247;
+// $color-secondry: black;
+$color-secondary: rgb(12, 18, 25);
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+$header-size: 3rem;
+$paragraph-size-small: 1.4rem;
+$paragraph-size-medium: 1.7rem;
+$paragraph-size-large: 2rem;
+
+$margin-small: 2rem;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+$bp-500px: 31.25em; // 500px;
+$bp-400px: 25em; // 400px;
+$bp-300px: 18.75em; // 300px;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	// This defines what 1rem is
+	font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%}
+	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
+}
+
+@media (max-width: 320px) {
+	html {
+		overflow-x: auto;
+	}
+}
